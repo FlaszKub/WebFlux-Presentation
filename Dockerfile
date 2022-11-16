@@ -1,0 +1,4 @@
+FROM postgres:15.0-alpine
+ENV POSTGRES_PASSWORD=demoAdmin!@1.
+ENV POSTGRES_USER=demoAdmin
+ENV POSTGRES_DB=demo
