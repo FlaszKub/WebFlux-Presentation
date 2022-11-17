@@ -20,6 +20,7 @@ create table addresses (
 
 create table users (
     id int8 not null DEFAULT nextval('user_generator'),
+    uuid uuid,
     date_of_brith date,
     first_name varchar(40),
     last_name varchar(40),
@@ -28,5 +29,4 @@ create table users (
     primary key (id),
     foreign key (address_id) references addresses
 );
-
 END;
